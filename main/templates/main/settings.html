@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ссылки для открытия файла html -->
+    <link rel="icon" href="../../static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="../../static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notifications.css" />
+
+    <!-- Ссылки для открытия в django server -->
+    <link rel="icon" href="/static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="/static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notifications.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Настройки</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <img src="../../static/main/logo.svg" id="cdHome" alt="logo">
+            <h3>Notes</h3>
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/notes.svg" id="cdNotes" alt="Заметки">
+            <img src="../../static/main/notification.svg" id="cdNotifications" alt="Уведомления">
+            <img src="../../static/main/profile.svg" id="cdProfile" alt="Профиль">
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/settings.svg" id="cdSettings" alt="Настройки">
+        </div>
+    </section>
+    <section class="submenu">
+        <h1>Настройки</h1>
+        <div class="submenubuttons">
+            <div class="button2">
+                Основное
+            </div>
+        </div>
+    </section>
+    <section class="desktop">
+        <div class="controlbox">
+            <h3>Основное</h3>
+        </div>
+        <div class="textnote">
+            <div class="groupoutput">
+                <div class="key-value">
+                    <input readonly type="text" value="Версия проекта">
+                    <input readonly type="text" value="1.0">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/main/height.js"></script>
+    <script src="/static/main/api.js"></script>
+    <script src="/static/main/settings.js"></script>
+</body>
+</html>

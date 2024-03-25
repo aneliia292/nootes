@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ссылки для открытия файла html -->
+    <link rel="icon" href="../../static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="../../static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/authorization.css" />
+
+    <!-- Ссылки для открытия в django server -->
+    <link rel="icon" href="/static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="/static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/authorization.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Вход</title>
+</head>
+<body>
+    <div id="authorization">
+        <h1>Вход</h1>
+        <input class="input1" type="email" placeholder="Почта" name="" id="email">
+        <input class="input1" type="password" placeholder="Пароль" name="" id="password">
+        <p id="info"></p>
+        <div class="button1" id="signinButton">
+            <h3>Войти</h3>
+        </div>
+        <a href="/signup/">Зарегистрироваться</a>
+    </div>
+    <script src="/static/main/height.js"></script>
+    <script src="/static/main/signin.js"></script>
+</body>
+</html>

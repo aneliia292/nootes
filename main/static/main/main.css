@@ -1,0 +1,179 @@
+body {
+    background-color: #446E68;
+    color: #F3E5D0;
+
+    font-family: 'Ubuntu', 'Nunito', 'Open Sans', sans-serif;
+    font-size: 15px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header.startpage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A8FF63;
+}
+
+
+.button1 {
+    width: 250px;
+    height: 50px;
+    background-color: #354754;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+
+.button1:hover {
+    background-color: #00838B;
+}
+
+.button1:active {
+    filter: drop-shadow(0 0 10px #00838B);
+}
+
+@media screen and (max-width: 710px) {
+    header.startpage {
+        flex-direction: column;
+    }
+
+    .button1 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+input.input1 {
+    font-family: 'Ubuntu';
+    border: 0px solid #00000000;
+    border-radius: 30px;
+    width: 500px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 15px;
+}
+
+a {
+    color: #F3E5D0;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    color: #A8FF63;
+}
+
+@media screen and (max-width: 710px) {
+    input.input1 {
+        width: 80vw;
+    }
+}
+
+#popupwindow {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    //height: calc(var(--vh, 1vh) * 100);
+    background-color: #00000093;
+}
+
+#popupwindow.active {
+    display: flex;
+}
+
+#popupmessage {
+    background-color: #4A6872;
+    border-radius: 30px;
+    min-width: 310px;
+    width: 50vw;
+    min-width: 300px;
+    min-height: 150px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerPopup {
+    margin: 5px;
+}
+
+#textPopup {
+    margin: 5px;
+}
+
+#inputPopup {
+    width: 35vw;
+    min-width: 250px;
+    margin: 8px;
+}
+
+.buttonsYesAndNo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.button3 {
+    background-color: #354754;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #00000000;
+}
+
+.buttonok {
+    color: #A8FF63;
+}
+
+.buttonok:hover {
+    border: 2px solid #A8FF63;
+}
+
+.buttonok:active {
+    filter: drop-shadow(0 0 5px #A8FF63);
+}
+
+.buttoncancel {
+    color: #FF6363;
+}
+
+.buttoncancel:hover {
+    border: 2px solid #FF6363;
+}
+
+.buttoncancel:active {
+    filter: drop-shadow(0 0 5px #FF6363);
+}
+
+

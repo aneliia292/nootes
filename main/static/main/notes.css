@@ -1,0 +1,242 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+section.menu {
+    border-right: 4px solid #F3E5D0;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.menubuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menubuttons img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+section.submenu {
+    background-color: #00000073;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    background-color: #354754;
+    margin: 20px;
+    border: 3px solid #354754;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button2.addanything {
+    border: 3px solid #724A6C;
+    background-color: #724A6C;
+}
+
+.button2:hover {
+    border: 3px solid #00838B;
+}
+
+.button2:active, .button2.active {
+    border: 3px solid #00838B;
+    background-color: #00838B;
+}
+
+section.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex-direction: column;
+    width: calc(100vw - 530px);
+}
+
+
+.controlbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #354754;
+    max-width: calc(100vw - 640px);
+    width: calc(100vw - 640px);
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.controlbox img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+#namenote {
+    overflow: hidden;
+    width: calc(100vw - 220px - 640px);
+    font-size: 18px;
+    height: 20px;
+}
+
+#backButton {
+    display: none;
+}
+
+.textnote {
+    background-color: #354754;
+    height: calc(100vh - 160px);
+    width: calc(100vw - 640px);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.textnote textarea {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: #354754;
+    color: #F3E5D0;
+    font-family: 'Ubuntu';
+    resize: none;
+    font-size: 14px;
+    border-width: 0px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    section.desktop {
+        display: none;
+        width: 100vw;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    body {
+        flex-direction: column-reverse;
+    }
+
+    section.menu {
+        flex-direction: row;
+        width: 100vw;
+        border-right: 0px solid #00000000;
+        border-top: 4px solid #F3E5D0;
+    }
+
+    .menubuttons {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .menubuttons img, .logo img {
+        margin: 10px 25px;
+    }
+
+    .logo h3 {
+        display: none;
+    }
+
+    section.submenu {
+        width: 100vw;
+        height: calc(100vh - 74px);;
+    }
+
+    section.desktop.active {
+        display: flex;
+    }
+
+    section.submenu.noactive {
+        display: none;
+    }
+
+    #namenote {
+        width: calc(100vw - 300px);
+    }
+
+    #backButton {
+        display: unset;
+    }
+
+    .controlbox {
+        width: calc(100vw - 90px);
+        max-width: calc(100vw - 30px);
+        margin-bottom: 10px;
+    }
+
+    .textnote {
+        width: calc(100vw - 30px);
+        height: calc(100vh - 165px);
+        height: calc((var(--vh, 1vh) * 100) - 165px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .textnote textarea {
+        width: calc(90vw - 30px);
+        height: calc(100vh - 210px);
+        height: calc((var(--vh, 1vh) * 100) - 210px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menubuttons img, .logo img {
+        margin: 10px 10px;
+    }
+
+    .controlbox {
+        flex-direction: column;
+    }
+
+    #namenote {
+        width: calc(100vw - 60px);
+        text-align: center;
+    }
+
+    .textnote {
+        height: calc(100vh - 205px);
+        height: calc((var(--vh, 1vh) * 100) - 205px);
+    }
+
+    .textnote textarea {
+        height: calc(100vh - 245px);
+        height: calc((var(--vh, 1vh) * 100) - 245px);
+    }
+}

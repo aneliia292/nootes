@@ -1,0 +1,50 @@
+.groupoutput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.key-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.key-value input {
+    padding: 8px 10px;
+    font-size: 15px;
+    margin: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #724A6C;
+    max-width: 250px;
+    width: 250px;
+}
+
+.key-value select {
+    padding: 8px 10px;
+    font-size: 15px;
+    margin: 10px 30px;
+    outline: none;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #724A6C;
+    max-width: 250px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+    .key-value input, .key-value select {
+        width: calc(50vw / 2);
+    }
+
+    .groupoutput {
+        width: calc(100vw - 80px);
+        height: calc(100vh - 230px);
+        height: calc((var(--vh, 1vh)* 100) - 230px);
+    }
+}

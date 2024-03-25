@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ссылки для открытия файла html -->
+    <link rel="icon" href="../../static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="../../static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notifications.css" />
+
+    <!-- Ссылки для открытия в django server -->
+    <link rel="icon" href="/static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="/static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notifications.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Профиль</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <img src="../../static/main/logo.svg" id="cdHome" alt="logo">
+            <h3>Notes</h3>
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/notes.svg" id="cdNotes" alt="Заметки">
+            <img src="../../static/main/notification.svg" id="cdNotifications" alt="Уведомления">
+            <img src="../../static/main/profile.svg" id="cdProfile" alt="Профиль">
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/settings.svg" id="cdSettings" alt="Настройки">
+        </div>
+    </section>
+    <section class="submenu">
+        <h1>Аккаунт</h1>
+        <div class="submenubuttons">
+            <div class="button2">
+                Общее
+            </div>
+            <div class="button2">
+                Изменить пароль
+            </div>
+        </div>
+    </section>
+    <section class="desktop">
+        <div class="controlbox">
+            <h3>Общее</h3>
+            <div class="controlbuttons">
+                <img src="../../static/main/pen.svg" alt="Создать уведомление">
+                <img src="../../static/main/delete.svg" alt="Создать уведомление">
+            </div>
+        </div>
+        <div class="textnote">
+            <div class="groupoutput">
+                <img src="../../static/main/profile.svg" alt="Настройки профиля">
+                <div class="key-value">
+                    <input readonly type="text" value="Id">
+                    <input readonly type="text" value="12">
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Имя">
+                    <input type="text" value="supername">
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Почта">
+                    <input type="text" value="user@simple.com">
+                </div>
+                <div class="button1" style="border: 3px solid #00838B; margin-top: 10px;">
+                    Сохранить
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/main/height.js"></script>
+    <script src="/static/main/api.js"></script>
+    <script src="/static/main/profile.js"></script>
+</body>
+</html>

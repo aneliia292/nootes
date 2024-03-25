@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ссылки для открытия файла html -->
+    <link rel="icon" href="../../static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="../../static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notifications.css" />
+
+    <!-- Ссылки для открытия в django server -->
+    <link rel="icon" href="/static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="/static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notes.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notifications.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Уведомления</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="logo" id="cdHome">
+            <img src="../../static/main/logo.svg" alt="logo">
+            <h3>Notes</h3>
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/notes.svg" id="cdNotes" alt="Заметки">
+            <img src="../../static/main/notification.svg" id="cdNotifications" alt="Уведомления">
+            <img src="../../static/main/profile.svg" id="cdProfile" alt="Профиль">
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/settings.svg" id="cdSettings" alt="Настройки">
+        </div>
+    </section>
+    <section class="submenu">
+        <h1>Уведомления</h1>
+        <div class="button2 addanything" id="addNotificationButton">
+            <h4>Добавить уведомление</h4>
+        </div>
+        <div class="submenubuttons"></div>
+    </section>
+    <section class="desktop">
+        <div class="controlbox">
+            <h3 id="nameNotification"></h3>
+            <div class="controlbuttons">
+                <img src="../../static/main/back.svg" id="backButton" alt="Назад">
+                <img src="../../static/main/save.svg" id="saveButton" alt="Сохранить уведомление">
+                <img src="../../static/main/delete.svg" id="deleteButton" alt="Удалить уведомление">
+            </div>
+        </div>
+        <div class="textnote">
+            <div class="groupoutput">
+                <p id="info"></p>
+                <img src="../../static/main/notification.svg" alt="Настройки уведомления">
+                <div class="key-value">
+                    <input readonly type="text" value="Тип">
+                    <select name="" id="selectTypeNotification">
+                        <option value="1">Телефон (сайт)</option>
+                        <option value="2">Почта</option>
+                        <option value="3">Telegram</option>
+                    </select>
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Заголовок">
+                    <input type="text" id="header">
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Текст">
+                    <input type="text" id="text">
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Отправитель">
+                    <select name="" id="selectNoteNotification">
+                    </select>
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Дата">
+                    <input type="text" id="date" placeholder="Например, 16.3.2024">
+                </div>
+                <div class="key-value">
+                    <input readonly type="text" value="Время">
+                    <input type="text" id="time" placeholder="Например, 12:45">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/main/height.js"></script>
+    <script src="/static/main/api.js"></script>
+    <script src="/static/main/notifications.js"></script>
+</body>
+</html>

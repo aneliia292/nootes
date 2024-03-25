@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#authorization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button1 {
+    margin-top: 20px;
+}
+
+.button1:hover {
+    background-color: #724A6C;
+}
+
+.button1:active {
+    filter: drop-shadow(0 0 10px #724A6C);
+}
+
+#info {
+    margin: 3px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ссылки для открытия файла html -->
+    <link rel="icon" href="../../static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="../../static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="../../static/main/notes.css" />
+
+    <!-- Ссылки для открытия в django server -->
+    <link rel="icon" href="/static/main/logo.svg" type="image/svg">
+    <link type="text/css" rel="stylesheet" href="/static/main/main.css" />
+    <link type="text/css" rel="stylesheet" href="/static/main/notes.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Заметки</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <img src="../../static/main/logo.svg" id="cdHome" alt="logo">
+            <h3>Notes</h3>
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/notes.svg" id="cdNotes" alt="Заметки">
+            <img src="../../static/main/notification.svg" id="cdNotifications" alt="Уведомления">
+            <img src="../../static/main/profile.svg" id="cdProfile" alt="Профиль">
+        </div>
+        <div class="menubuttons">
+            <img src="../../static/main/settings.svg" id="cdSettings" alt="Настройки">
+        </div>
+    </section>
+    <section class="submenu">
+        <h1>Заметки</h1>
+        <div class="button2 addanything" id="addNoteButton">
+            <h4>Добавить заметку</h4>
+        </div>
+        <div class="submenubuttons"></div>
+    </section>
+    <section class="desktop">
+        <div class="controlbox">
+            <h3 id="namenote">Список покупок</h3>
+            <div class="controlbuttons">
+                <img src="../../static/main/back.svg" id="backButton" alt="Назад">
+                <img src="../../static/main/notificationsmall.svg" id="createNotificationButton" alt="Создать уведомление">
+                <img src="../../static/main/save.svg" id="saveButton" alt="Сохранить заметку">
+                <img src="../../static/main/delete.svg" id="deleteButton" alt="Удалить заметку">
+            </div>
+        </div>
+        <div class="textnote">
+            <textarea id="textareaNote"></textarea>
+        </div>
+    </section>
+    <section id="popupwindow">
+        <div id="popupmessage">
+            <h3 id="headerPopup">Напишите название заметки:</h3>
+            <p id="textPopup"></p>
+            <input type="text" placeholder="Название заметки" class="input1" id="inputPopup">
+            <div class="buttonsYesAndNo">
+                <div class="button3 buttoncancel">
+                    Отмена
+                </div>
+                <div class="button3 buttonok">
+                    Ок
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/static/main/height.js"></script>
+    <script src="/static/main/api.js"></script>
+    <script src="/static/main/notes.js"></script>
+</body>
+</body>
+</html>
